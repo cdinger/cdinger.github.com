@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cdinger.github.com by cdinger</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      <h1>The House of Ding.</h1>
+      <!--<p class="view"><a href="https://github.com/cdinger">View My GitHub Profile</a></p>-->
+      </header>
+      <section>
+
+
+<h2 id='jqueryobjectdiff__a_jquery_plugin_for_comparing_objects'>jquery-objectdiff — a jQuery plugin for comparing objects</h2>
+
+<p>I recently worked on a javascript project that involved a simple workflow where an unprivileged user could request changes to certain bits of enterprise data. The requested changes would then route to a privileged user who would either make the requested changes or deny the request. I wanted to provide a some kind of diff to the privileged user so they didn’t have to compare two sets of data and manually find the changes. It’s 2011—no human should <em>ever</em> have to manually perform a diff!</p>
+
+<p>In Rails, I’d be able to reflect on the <a href='http://ar.rubyonrails.org/classes/ActiveRecord/Dirty.html#M000291'>ActiveRecord::Dirty::changes</a> hash to see which attributes were modified and their before and after values. I love how it works and I searched for a javascript diff’er that did something similar. There are a few out there, but none worked quite like I wanted, so I decided to roll my own. objectDiff() will recursively compare two javascript objects and return an ActiveRecord-style changes object. Check it:</p>
+
+<h3 id='usage'>Usage</h3>
+
+<p>Suppose you have two javascript objects (like serialized form data):</p>
+<div>
+  <pre><code class='javascript'>var before = {
+  &quot;id&quot;: 123,
+  &quot;name&quot;: {
+    &quot;first&quot;: &quot;Johnny&quot;,
+    &quot;last&quot;:&quot;Johnson&quot;
+  }
+};
+
+var after = {
+  &quot;id&quot;: 123,
+  &quot;name&quot;: {
+    &quot;first&quot;: &quot;John&quot;,
+    &quot;last&quot;: &quot;Johnson&quot;
+  },
+  &quot;age&quot;: 30
+};</code></pre>
+</div>
+<p>A call to <code>objectDiff(before, after)</code> would return an object of only the changes:</p>
+<div>
+  <pre><code class='javascript'>{&quot;name&quot;: {&quot;first&quot;: [&quot;Johnny&quot;, &quot;John&quot;]}, &quot;age&quot;: [null, 30]}</code></pre>
+</div>
+<p>I hope this is useful to someone. It’s wrapped up in a jQuery plugin on Github: <a href='https://github.com/cdinger/jquery-objectdiff'>jquery-objectdiff</a>.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
+
+
+
