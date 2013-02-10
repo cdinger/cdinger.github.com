@@ -1,5 +1,7 @@
 {% include head.html %}
-{{ content }}
+    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+    <p>{{ page.date | date_to_string }}</p>
+    {{ content }}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
