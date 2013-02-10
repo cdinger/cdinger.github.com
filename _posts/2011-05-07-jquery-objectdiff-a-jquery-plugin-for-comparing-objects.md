@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: jquery-objectdiff — a jQuery plugin for comparing objects
-lead: "I recently worked on a javascript project that involved a simple workflow where an unprivileged user could request changes to certain bits of enterprise data. The requested changes would then route to a privileged user who would either make the requested changes or deny the request. I wanted to provide a some kind of diff to the privileged user so they didn’t have to compare two sets of data and manually find the changes. It’s 2011—no human should *ever* have to manually perform a diff!"  
+lead: "I recently worked on a javascript project that involved a simple workflow where an unprivileged user could request changes to certain bits of enterprise data. The requested changes would then route to a privileged user who would either make the requested changes or deny the request. I wanted to provide a some kind of diff to the privileged user so they didn’t have to compare two sets of data and manually find the changes. It’s 2011—no human should ever have to manually perform a diff!"  
 ---
 ## jquery-objectdiff — a jQuery plugin for comparing objects
 
