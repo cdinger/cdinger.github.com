@@ -1,3 +1,4 @@
 server_port: 4000
-permalink:   date
+permalink: /:categories/:year/:month/:title/
 site_title: The House of Ding.
+tagline: 
