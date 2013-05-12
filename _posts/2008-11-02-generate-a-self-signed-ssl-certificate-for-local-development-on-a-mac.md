@@ -32,6 +32,6 @@ Add the following to your Apache configuration to use the new certificate:
 
     SSLEngine on
     SSLCertificateFile /etc/apache2/ssl/server.crt
-    SSLCertificateKeyFile /etc/apache2/ssl/server.key
+    SSLCertificateKeyFile /etc/apache2/ssl/host.key
 
 Restart Apache with `sudo apachectl restart` and try our your new certificate.
