@@ -16,11 +16,7 @@
     <div class="wrapper">
       <header>
       <h1><a href="/">The House of Ding.</a></h1>
-      <p></p>
       <!--<p class="view"><a href="https://github.com/cdinger">View My GitHub Profile</a></p>-->
-      
-      <p><a href="/index.html"></a></p>
-      
       </header>
       <section>
 
@@ -34,28 +30,26 @@
 <h3 id='usage'>Usage</h3>
 
 <p>Suppose you have two javascript objects (like serialized form data):</p>
-<div>
-  <pre><code class='javascript'>var before = {
-  &quot;id&quot;: 123,
-  &quot;name&quot;: {
-    &quot;first&quot;: &quot;Johnny&quot;,
-    &quot;last&quot;:&quot;Johnson&quot;
-  }
-};
+<div class='highlight'><pre><code class='javascript'><span class='kd'>var</span> <span class='nx'>before</span> <span class='o'>=</span> <span class='p'>{</span>
+  <span class='s2'>&quot;id&quot;</span><span class='o'>:</span> <span class='mi'>123</span><span class='p'>,</span>
+  <span class='s2'>&quot;name&quot;</span><span class='o'>:</span> <span class='p'>{</span>
+    <span class='s2'>&quot;first&quot;</span><span class='o'>:</span> <span class='s2'>&quot;Johnny&quot;</span><span class='p'>,</span>
+    <span class='s2'>&quot;last&quot;</span><span class='o'>:</span><span class='s2'>&quot;Johnson&quot;</span>
+  <span class='p'>}</span>
+<span class='p'>};</span>
 
-var after = {
-  &quot;id&quot;: 123,
-  &quot;name&quot;: {
-    &quot;first&quot;: &quot;John&quot;,
-    &quot;last&quot;: &quot;Johnson&quot;
-  },
-  &quot;age&quot;: 30
-};</code></pre>
-</div>
+<span class='kd'>var</span> <span class='nx'>after</span> <span class='o'>=</span> <span class='p'>{</span>
+  <span class='s2'>&quot;id&quot;</span><span class='o'>:</span> <span class='mi'>123</span><span class='p'>,</span>
+  <span class='s2'>&quot;name&quot;</span><span class='o'>:</span> <span class='p'>{</span>
+    <span class='s2'>&quot;first&quot;</span><span class='o'>:</span> <span class='s2'>&quot;John&quot;</span><span class='p'>,</span>
+    <span class='s2'>&quot;last&quot;</span><span class='o'>:</span> <span class='s2'>&quot;Johnson&quot;</span>
+  <span class='p'>},</span>
+  <span class='s2'>&quot;age&quot;</span><span class='o'>:</span> <span class='mi'>30</span>
+<span class='p'>};</span>
+</code></pre></div>
 <p>A call to <code>objectDiff(before, after)</code> would return an object of only the changes:</p>
-<div>
-  <pre><code class='javascript'>{&quot;name&quot;: {&quot;first&quot;: [&quot;Johnny&quot;, &quot;John&quot;]}, &quot;age&quot;: [null, 30]}</code></pre>
-</div>
+<div class='highlight'><pre><code class='javascript'><span class='p'>{</span><span class='s2'>&quot;name&quot;</span><span class='o'>:</span> <span class='p'>{</span><span class='s2'>&quot;first&quot;</span><span class='o'>:</span> <span class='p'>[</span><span class='s2'>&quot;Johnny&quot;</span><span class='p'>,</span> <span class='s2'>&quot;John&quot;</span><span class='p'>]},</span> <span class='s2'>&quot;age&quot;</span><span class='o'>:</span> <span class='p'>[</span><span class='kc'>null</span><span class='p'>,</span> <span class='mi'>30</span><span class='p'>]}</span>
+</code></pre></div>
 <p>I hope this is useful to someone. It’s wrapped up in a jQuery plugin on Github: <a href='https://github.com/cdinger/jquery-objectdiff'>jquery-objectdiff</a>.</p>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
