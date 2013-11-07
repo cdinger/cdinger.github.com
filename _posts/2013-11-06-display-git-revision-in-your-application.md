@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "Display git revision in your application footer"
-lead: "Display and link your deployed git revision (and Rails environment) in your application template"
+title: "Display git revision in your Rails application footer"
+lead: "It's always nice to know which version of your code is deployed. When your
+product owner discovers a bug in your staging/test instance especially, you want
+to know 'what version was that?'. Or, more importantly, 'who checked in and
+deployed that code?!'."
 ---
 It's always nice to know which version of your code is deployed. When your
 product owner discovers a bug in your staging/test instance especially, you want
