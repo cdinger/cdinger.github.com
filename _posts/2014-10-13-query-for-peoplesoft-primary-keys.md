@@ -7,7 +7,7 @@ lead: "PeopleSoft tables don't use real primary keys—they use logical primary 
        can query these keys from one of PeopleSoft's setup tables, pskeydefn."
 ---
 
-My day job has be building Rails apps that sling data to and from PeopleSoft
+My day job has me building Rails apps that sling data to and from PeopleSoft
 instances. Because of this, I often find myself looking up a particular table's primary key.
 If you ever had to do this with a PeopleSoft table, you know it's a pain. PeopleSoft doesn't use
 real DB keys, so to look these up you have to ask PeopleSoft itself. For me, this always involved logging 
