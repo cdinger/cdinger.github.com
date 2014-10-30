@@ -16,7 +16,7 @@ into the web application and fiddling with the reporting engine or worse, firing
 I've just stumbled upon the table where PeopleSoft stores this information, `pskeydefn`. So to query the
 primary keys for say, ps_acad_prog_tbl, query like so:
 
-{% highlight clojure %}
+{% highlight SQL %}
 SELECT fieldname
 FROM pskeydefn
 WHERE recname='ACAD_PROG_TBL' -- or any PS table
