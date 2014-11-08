@@ -5,5 +5,5 @@ layout: default
 {% for post in site.posts limit:5 %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="post-date">{{ post.date | date_to_string }} &mdash; <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a></p>
-  <p>{{ post.lead }}</p>
+  <p class="post-lead">{{ post.lead }}</p>
 {% endfor %}

@@ -12,9 +12,26 @@ body {
   padding: 15px;
 }
 
+p.post-date, p.post-share {
+  /*font-family: "Century Gothic", "Helvetica Neue";*/
+  font-family: "Helvetica Neue";
+}
+
 p.post-date {
-  font-family: "Century Gothic", "Helvetica Neue";
   margin-top: -1em;
+  margin-bottom: 0;
+}
+
+p.post-date + p.post-lead {
+  margin-top: 0;
+}
+
+.share {
+  font-size:1.2em;
+}
+
+.share a {
+  color: #333;
 }
 
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h5, h6 {
@@ -187,11 +204,16 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
   bottom:1em;
   font-family: "Helvetica Neue";
+  font-size:.8em;
+}
+
+footer span {
+  font-family: "League Spartan";
 }
 
 @media print, screen and (max-width: 960px) {

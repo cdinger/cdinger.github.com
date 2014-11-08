@@ -7,18 +7,18 @@ getting the dreaded `SQLException: No suitable driver found for jdbc:oracle:thin
 I've just started learning Clojure and have been trying desperately to
 get my Leiningen project to talk to an Oracle database. All of my
 enterprise's data is wrapped up in Oracle, so to do anyting useful or
-interesting with Clojure, I had to first overcome this first step.
+interesting with Clojure, I had to first overcome this step.
 
 The following is surely a no-brainer for experienced Java developers, but I come from
 Ruby and am new to both Java *and* Clojure. I hope this helps others
 coming into Clojure from this angle.
 
-## Download Oracle JDBC driver
+### Download Oracle JDBC driver
 
 If you don't already have an Oracle JDBC driver (ojdbc5.jar, ojdbc6.jar,
 ojdbc14.jar), you'll want to [download it from Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html) first.
 
-## Install ojdbc jar to local Maven repository
+### Install ojdbc jar to local Maven repository
 
 Install your JDBC driver to your local Maven repo with this command:
 
@@ -35,7 +35,7 @@ want; `self` or `poo` would work just as well.
 - `file` needs to point to an absolute path to your jar file. Relative
   paths don't seem to work.
 
-## Reference your local respository in project.clj
+### Reference your local respository in project.clj
 
 In your project.clj file, you can now specify your proprietary library
 as you would any other dependency. Just be sure to prefix it with the
@@ -47,7 +47,7 @@ value you used for `groupId` in your maven command; `local` in this case:
                  [local/ojdbc6 "11.2.0.3"]
 {% endhighlight %}
 
-## Trying it out
+### Trying it out
 
 Huzzah! My cheesy query now returns results:
 
