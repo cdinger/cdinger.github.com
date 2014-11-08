@@ -1,4 +1,5 @@
 port: 4000
 permalink: /:categories/:year/:month/:title/
+base_url: http://houseofding.com
 site_title: The House of Ding.
 tagline: 

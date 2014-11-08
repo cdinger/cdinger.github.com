@@ -1,12 +1,12 @@
 {% include head.html %}
-    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <p class="post-date">
       {{ page.date | date_to_string }}
       &rarr;
       <span class="share">
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href=""><i class="fa fa-facebook-square"></i></a>
-        <a href=""><i class="fa fa-google-plus-square"></i></a>
+        <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.base_url }}{{ page.url }}"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u={{ site.base_url }}{{ page.url }}"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://plus.google.com/share?url={{ site.base_url }}{{ page.url }}"><i class="fa fa-google-plus-square"></i></a>
       </span>
     </p>
     {{ content }}
