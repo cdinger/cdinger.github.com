@@ -1,4 +1,4 @@
-server_port: 4000
+port: 4000
 permalink: /:categories/:year/:month/:title/
 site_title: The House of Ding.
 tagline: 
