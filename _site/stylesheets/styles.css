@@ -1,27 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
+@import url(leaguespartan.css);
+
+* + * {
+  margin-bottom: 1em;
+}
 
 body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  font:15px/1.8 "Libre Baskerville", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#333;
   font-weight:300;
+  padding: 15px;
+}
+
+p.post-date {
+  font-family: "Century Gothic", "Helvetica Neue";
+  margin-top: -1em;
 }
 
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  font-family: "League Spartan";
+  line-height: 1.2em;
 }
 
 h1 a, h2 a, h3 a {
   font-weight:bold;
-}
-
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
 }
 
 h1 {
@@ -62,16 +65,17 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family:Menlo,Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
   font-size:12px;
 }
 
 pre {
+  margin: 2em 0;
   padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
+  /*background: #f8f8f8;  */
+  /*border-radius:5px;*/
+  /*border:1px solid #e5e5e5;*/
   overflow-x: auto;
 }
 
@@ -100,7 +104,8 @@ img {
 }
 
 header {
-  width:270px;
+  margin-top:1em;
+  width:220px;
   float:left;
   position:fixed;
 }
@@ -164,8 +169,9 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:600px;
   float:right;
+  padding-top:10px;
   padding-bottom:50px;
 }
 
@@ -184,7 +190,8 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:1em;
+  font-family: "Helvetica Neue";
 }
 
 @media print, screen and (max-width: 960px) {
@@ -225,6 +232,7 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+    padding: 15px;
   }
   
   header {
