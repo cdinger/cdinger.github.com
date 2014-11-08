@@ -209,11 +209,15 @@ footer {
   position:fixed;
   bottom:1em;
   font-family: "Helvetica Neue";
-  font-size:.8em;
+  font-size: 0.9em;
 }
 
 footer span {
   font-family: "League Spartan";
+}
+
+footer a {
+  color: #333;
 }
 
 @media print, screen and (max-width: 960px) {
