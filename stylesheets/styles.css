@@ -12,6 +12,13 @@ body {
   padding: 15px;
 }
 
+.recent h3 {
+  margin-top: 2em;
+}
+.recent h3:first-child {
+  margin-top: 1em;
+}
+
 p.post-date, p.post-share {
   /*font-family: "Century Gothic", "Helvetica Neue";*/
   font-family: "Helvetica Neue";
