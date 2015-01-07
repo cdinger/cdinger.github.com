@@ -3,3 +3,8 @@ permalink: /:categories/:year/:month/:title/
 base_url: http://houseofding.com
 site_title: The House of Ding.
 tagline: 
+
+# Used in feed.xml
+name: The House of Ding
+description: The House of Ding
+url: http://houseofding.com
