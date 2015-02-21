@@ -17,7 +17,6 @@ committing it every time we stood up new servers. No more!
 
 My `.ssh/config` now contains these four precious lines:
 
-    # ~/.ssh/config
     Host bastion
       HostName some-bastion-host.umn.edu
 
