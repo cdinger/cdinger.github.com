@@ -84,7 +84,7 @@ Any effective dated nonsense that this requires should take a back seat to this
 distilled statement.
 
 {% highlight SQL %}
-SELECT * FROM effective_acad_prog_tbl WHERE emplid = '12345'
+SELECT * FROM effective_acad_prog_tbl WHERE acad_prog='123ASDF'
 {% endhighlight %}
 
 ### Destructuring with `WITH`
@@ -118,7 +118,7 @@ effective_acad_prog_tbl AS (
         AND ps_acad_prog_tbl.acad_prog = ps_acad_prog_tbl_eff_keys.acad_prog
         AND ps_acad_prog_tbl.effdt = ps_acad_prog_tbl_eff_keys.effdt
 )
-SELECT * FROM effective_acad_prog_tbl WHERE emplid = '12345'
+SELECT * FROM effective_acad_prog_tbl WHERE acad_prog = '123ASDF'
 {% endhighlight %}
 
 `WITH` lets us nicely break up (and push aside) the non-core queries and clauses,
