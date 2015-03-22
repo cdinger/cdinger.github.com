@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
 @import url(leaguespartan.css);
+@import url(equip.css);
 
 * + * {
   margin-bottom: 1em;
@@ -13,7 +14,7 @@ body {
 }
 
 p.post-date, p.post-share {
-  font-family: "Helvetica Neue";
+  font-family: "equiplight", "Helvetica Neue";
 }
 
 p.post-date {
@@ -212,7 +213,7 @@ footer {
   float:left;
   position:fixed;
   bottom:1em;
-  font-family: "Helvetica Neue";
+  font-family: "equiplight", "Helvetica Neue";
   font-size: 0.9em;
 }
 
