@@ -24,7 +24,7 @@ My `.ssh/config` now contains these four precious lines:
       ProxyCommand ssh bastion nc %h %p
 
 This configuration will match any host under `umn.edu` and transparently proxy it
-through the bastion host.
+through the bastion host using [netcat](http://en.wikipedia.org/wiki/Netcat).
 
 ### Bash completion
 
