@@ -46,7 +46,7 @@ but every bit of software you'll want to use will be looking for `libclntsh.dyli
 ### 2. sqlnet.ora
 
 The OCI driver properties can be configured via a special file called `sqlnet.ora`. The property
-we're interested in is the [SQLNET.AUTHENTICATION_SERVICES](https://docs.oracle.com/cd/E11882_01/network.112/e10835/sqlnet.htm#NETRF2035) property.
+we're interested in is [SQLNET.AUTHENTICATION_SERVICES](https://docs.oracle.com/cd/E11882_01/network.112/e10835/sqlnet.htm#NETRF2035).
 
 Create a `sqlnet.ora` file and place it in a directory you'll reference later as `TNS_ADMIN`. 
 Make sure `sqlnet.ora` file has an entry for `radius`:
