@@ -73,10 +73,29 @@ AddVMOption -Djava.library.path=/Users/ding0057/lib/instantclient_12_1
 
 You must set the TNS_ADMIN environment variable to make this work. Note that this needs to be set in
 the GUI environment via `launchctl`—simply setting the environment variable
-in a terminal will not work. Run this on the command line and adjust the path to where your `sqlnet.ora` lives:
+in a terminal will not work. Unfortunately, values set via `launchctl` don't persist between sessions
+(if you logout or restart, the value is lost).
+
+In order to set this value upon start, create a `~/Library/LaunchAgents/oracle.plist`
+file that looks like this (replace the path with your own):
 
 ```
-launchctl setenv TNS_ADMIN /directory/where/sqlnet.ora/lives
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>Set TNS_ADMIN at login</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>sh</string>
+      <string>-c</string>
+      <string>launchctl setenv TNS_ADMIN /directory/where/sqlnet.ora/lives</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
 ```
 
 Also note that `TNS_ADMIN` should be a directory—not a file.
