@@ -62,7 +62,7 @@ which ignores the `DYLD_LIBRARY_PATH` environment variable. This is how the inst
 is typically revealed to SQL Developer. SQL Developer still looks at this environment variable even though we
 can no longer use it. It's simply not an option for setting this path.
 
-Instead we can clobber the `java.library.path` via a not-so-invasive configuration file, `~/sqldeveloper/4.2.0/sqldeveloper.config`.
+Instead we can clobber the `java.library.path` via a not-so-invasive configuration file, `~/.sqldeveloper/4.2.0/sqldeveloper.conf`.
 Create this file and set `java.library.path` to your instantclient path:
 
 ```
