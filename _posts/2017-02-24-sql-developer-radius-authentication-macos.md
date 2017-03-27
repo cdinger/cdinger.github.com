@@ -104,13 +104,13 @@ Also note that `TNS_ADMIN` should be a directory—not a file.
 
 Now, fire up SQL Developer. Navigate to *Oracle SQL Developer* > *Preferences* and choose *Database* > *Advanced*:
 
-![asdf](/images/instantclient1.png)
+![SQL Developer screenshot](/images/instantclient1.png)
 
 Check the *Use Oracle Client* and *Use OCI/Thick driver* checkboxes.
 
 Then, click *Configure* and enter the location of your instantclient:
 
-![asdf](/images/instantclient2.png)
+![SQL Developer screenshot](/images/instantclient2.png)
 
 Don't worry about clicking the *Test* button here. Its output is not useful (failures here do not necessarily
 indicate a broken configuration). Even when everything is working this test fails—ignore it.
