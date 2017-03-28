@@ -28,6 +28,9 @@ As of the writing of this post, the latest versions are
 and
 [Instant Client 12.1.0.2](http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html). That's what I'll use in this guide.
 
+Download these resources directly from Oracle. The Homebrew packages available strip out the `.jar` files which
+confuses SQL Developer.
+
 ### 1. Install instantclient
 
 Download [instantclient 12.1.0.2](http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html) from Oracle.
