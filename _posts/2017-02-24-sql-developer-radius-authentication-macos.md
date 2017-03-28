@@ -4,10 +4,6 @@ title: RADIUS authentication in SQL Developer on MacOS
 lead: Configure SQL Developer to use RADIUS (two-factor/MFA or other reasons) for authentication into an Oracle instance on modern MacOS.
 ---
 
-<!--Lately this blog is looking like an Oracle survival guide. -->
-
-<!--I'm assuming you already have SQL Developer installed.-->
-
 This post will walk you through configuring SQL Developer to perform RADIUS authentication on MacOS.
 I periodically need to do this to connect to databases that require multi-factor authentication (MFA) and I
 struggle with it every time. More than anything, this is just yet another entry in my Oracle Survival Guide to help
