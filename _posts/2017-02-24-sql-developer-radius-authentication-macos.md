@@ -97,7 +97,9 @@ file that looks like this (replace the path with your own):
 </plist>
 ```
 
-Also note that `TNS_ADMIN` should be a directory—not a file.
+Note that `TNS_ADMIN` should point to a directory—not a file.
+
+You'll need to logout or restart for this change to become active.
 
 ### 4. Configure SQL Developer to use OCI
 
