@@ -2,10 +2,6 @@
 @import url(leaguespartan.css);
 @import url(equip.css);
 
-* + * {
-  margin-bottom: 1em;
-}
-
 body {
   font:15px/1.8 "Libre Baskerville", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#333;
