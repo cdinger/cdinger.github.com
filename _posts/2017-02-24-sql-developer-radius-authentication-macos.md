@@ -56,9 +56,7 @@ we're interested in is [SQLNET.AUTHENTICATION_SERVICES](https://docs.oracle.com/
 Create a `sqlnet.ora` file and place it in a directory you'll reference later as `TNS_ADMIN`. 
 Make sure `sqlnet.ora` file has an entry for `radius`:
 
-```
-SQLNET.AUTHENTICATION_SERVICES=(none,radius)
-```
+    SQLNET.AUTHENTICATION_SERVICES=(none,radius)
 
 ### 3. Mangle the java.library.path property
 
@@ -70,9 +68,7 @@ can no longer use it. It's simply not an option for setting this path.
 Instead we can clobber the `java.library.path` via a not-so-invasive configuration file, `~/.sqldeveloper/4.2.0/sqldeveloper.conf`.
 Create this file and set `java.library.path` to your instantclient path:
 
-```
-AddVMOption -Djava.library.path=/Users/ding0057/lib/instantclient_12_1
-```
+    AddVMOption -Djava.library.path=/Users/ding0057/lib/instantclient_12_1
 
 ### 4. Set the TNS_ADMIN path for GUI applications
 
@@ -84,7 +80,7 @@ in a terminal will not work. Unfortunately, values set via `launchctl` don't per
 In order to set this value upon start, create a `~/Library/LaunchAgents/oracle.plist`
 file that looks like this (replace the path with your own):
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
