@@ -292,3 +292,9 @@ footer a {
     color:#444;
   }
 }
+
+header img {
+  height: 70px;
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+}
