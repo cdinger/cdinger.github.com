@@ -1,8 +1,8 @@
 port: 4000
 permalink: /:categories/:year/:month/:title/
-base_url: https://christiandinger.com
+base_url: https://chrisdinger.com
 
 # Used in feed.xml
-name: christiandinger.com
-description: christiandinger.com
-url: https://christiandinger.com
+name: chrisdinger.com
+description: chrisdinger.com
+url: https://chrisdinger.com
