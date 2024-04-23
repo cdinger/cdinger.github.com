@@ -24,9 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      - name: Build jekyll site
-        run: bundle install && bundle exec jekyll build
-
-      - name: Run Pagefind
-        run: npm_config_yes=true npx pagefind --site "_site"
+      - uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+        with:
+          ruby-version: '3.3' # Not needed with a .ruby-version file
+      - run: bundle install
+      - run: bundle exec jekyll build
+      - run: npm_config_yes=true npx pagefind --site "_site"
