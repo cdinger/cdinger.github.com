@@ -30,3 +30,5 @@ jobs:
       - run: bundle install
       - run: bundle exec jekyll build
       - run: npm_config_yes=true npx pagefind --site "_site"
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
