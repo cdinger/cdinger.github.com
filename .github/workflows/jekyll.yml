@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Pagefind search
+        run: npx pagefind@latest --site "_site"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
